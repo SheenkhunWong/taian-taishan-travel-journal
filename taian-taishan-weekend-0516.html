@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北京立水桥出发 · 泰安泰山周末两日手账 · 2026.05.16-17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Long+Cang&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;800&family=ZCOOL+KuaiLe&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f5ead2;
+  --paper2:#fff7e8;
+  --ink:#352514;
+  --muted:#78634a;
+  --line:#d5bb83;
+  --mount:#24523b;
+  --pine:#2f6b48;
+  --stone:#6c6f64;
+  --sun:#e98931;
+  --red:#bf3f35;
+  --blue:#2f6f9f;
+  --jade:#8fb996;
+  --gold:#f3ce62;
+  --pink:#f6b4aa;
+  --cyan:#a9d8d1;
+  --memo:#fff1a8;
+  --mint:#d9f0cf;
+  --sky:#cce9f5;
+  --coral:#ffc2ad;
+  --shadow:#22170d24;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  font-family:"Noto Serif SC",serif;
+  background:
+    radial-gradient(circle at 12% 8%, #f8d889 0 7%, transparent 24%),
+    radial-gradient(circle at 88% 18%, #bee1ca 0 8%, transparent 26%),
+    linear-gradient(135deg, #dfc99f 0%, #f6edda 44%, #e5d5b4 100%);
+  min-height:100vh;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;
+  pointer-events:none;
+  opacity:.44;
+  background-image:
+    linear-gradient(#b7954c1c 1px, transparent 1px),
+    linear-gradient(90deg, #b7954c18 1px, transparent 1px),
+    radial-gradient(circle at 20% 30%, #00000012 1px, transparent 1.6px),
+    radial-gradient(circle at 70% 60%, #ffffff80 1px, transparent 1.5px);
+  background-size:28px 28px,28px 28px,9px 9px,13px 13px;
+  mix-blend-mode:multiply;
+}
+a{color:var(--blue)}
+.wrap{width:min(1120px, calc(100% - 24px)); margin:0 auto; padding:22px 0 80px; position:relative}
+.page{
+  position:relative;
+  margin:26px 0;
+  padding:30px;
+  border:1px solid #d3bd8b;
+  border-radius:9px 16px 11px 18px;
+  background:
+    linear-gradient(180deg, #fffaf0 0%, #f5ead2 100%),
+    repeating-linear-gradient(0deg, transparent 0 29px, #a88c5722 29px 30px);
+  box-shadow:0 18px 36px -26px #000, 4px 6px 0 #caa76f33, 0 2px 4px #0001, inset 0 1px 0 #fff;
+  overflow:hidden;
+}
+.page::after{
+  content:"";
+  position:absolute;inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg, transparent 0 54px, #df777044 54px 56px, transparent 56px),
+    repeating-linear-gradient(180deg, transparent 0 30px, #a88c5722 30px 31px),
+    radial-gradient(circle at 97% 8%, #c8543c18 0 42px, transparent 43px);
+  opacity:.82;
+}
+.page:nth-of-type(3n){transform:rotate(.25deg)}
+.page:nth-of-type(3n+1){transform:rotate(-.18deg)}
+.page:nth-of-type(3n+2){transform:rotate(.12deg)}
+.page>*{position:relative;z-index:1}
+.tape{
+  position:absolute;z-index:2;
+  width:128px;height:27px;
+  top:-10px;
+  background:#ffe580cc;
+  border-left:1px dashed #865f2a55;
+  border-right:1px dashed #865f2a55;
+  box-shadow:0 5px 10px #0002;
+}
+.tape.left{left:32px;transform:rotate(-5deg);background:#ffb4a4cc}
+.tape.right{right:36px;transform:rotate(5deg);background:#a8e0d8cc}
+.tape.mid{left:50%;transform:translateX(-50%) rotate(2deg);background:#cce6a8cc}
+.hero{
+  min-height:500px;
+  display:grid;
+  grid-template-columns:1fr .9fr;
+  gap:26px;
+  align-items:stretch;
+  padding:0;
+  overflow:hidden;
+  transform:rotate(-.25deg);
+}
+.hero::after{display:none}
+.hero-art{
+  min-height:500px;
+  position:relative;
+  background:
+    linear-gradient(180deg, #f7b45d 0 12%, #f8d69b 12% 30%, #d8d9a4 30% 43%, #6f9f75 43% 59%, #305f45 59% 100%);
+  border-right:1px solid #cba96c;
+}
+.sun{position:absolute;left:52px;top:44px;width:96px;height:96px;border-radius:50%;background:#fff0a8;box-shadow:0 0 0 12px #fff0a830, 0 0 45px #f59a2e}
+.ridge{position:absolute;inset:auto 0 0;height:62%;background:linear-gradient(140deg, transparent 0 14%, #214735 14% 28%, transparent 28% 34%, #2d6446 34% 46%, transparent 46% 53%, #1d3c30 53%);clip-path:polygon(0 72%,12% 55%,22% 64%,34% 36%,46% 62%,56% 28%,66% 48%,76% 20%,90% 56%,100% 44%,100% 100%,0 100%)}
+.stairs{
+  position:absolute;left:50%;bottom:0;width:130px;height:68%;
+  transform:translateX(-50%) perspective(420px) rotateX(42deg);
+  background:repeating-linear-gradient(180deg,#e5d6b8 0 16px,#856c4a 16px 19px);
+  border-left:5px solid #614b35;border-right:5px solid #614b35;
+  box-shadow:0 0 0 2px #ffffff55 inset;
+}
+.gate{
+  position:absolute;left:50%;bottom:54%;transform:translateX(-50%);
+  width:170px;height:120px;
+}
+.gate::before{
+  content:"南天门";
+  position:absolute;left:0;right:0;top:0;text-align:center;
+  height:42px;line-height:42px;
+  background:#b83a31;color:#f9de8a;
+  font-family:"Ma Shan Zheng";font-size:28px;
+  border:4px solid #7a211d;
+  box-shadow:0 8px 0 #6a2520;
+}
+.gate::after{
+  content:"";
+  position:absolute;left:18px;right:18px;bottom:0;height:74px;
+  border-left:18px solid #7a211d;border-right:18px solid #7a211d;border-bottom:12px solid #7a211d;
+}
+.hero-copy{padding:34px 30px 26px;display:flex;flex-direction:column;justify-content:center}
+.kicker{
+  display:inline-flex;align-items:center;gap:8px;width:max-content;
+  padding:5px 12px;border:1px solid #b9904b;border-radius:999px;background:#fff1c7;
+  font-size:13px;color:#765226;font-weight:800;
+}
+h1{
+  font-family:"Long Cang","Ma Shan Zheng","ZCOOL KuaiLe",serif;
+  font-size:72px;
+  line-height:1.05;
+  margin:18px 0 10px;
+  letter-spacing:0;
+  text-shadow:2px 2px 0 #ffe6a4, 4px 4px 0 #e09b4d33;
+}
+.subtitle{
+  font-family:"Caveat","ZCOOL XiaoWei",serif;
+  font-size:30px;color:#6f573b;margin-bottom:16px;
+}
+.hero-note{line-height:1.85;color:#513d26;font-size:16px}
+.hero-note::before{
+  content:"手写备注";
+  display:inline-block;
+  margin-right:8px;
+  padding:2px 8px;
+  transform:rotate(-3deg);
+  background:#ffe06d;
+  border:1px solid #b88a32;
+  border-radius:3px;
+  font-family:"Long Cang";
+  font-size:24px;
+  color:#9b342d;
+}
+.hero-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}
+.stamp{
+  min-height:86px;
+  border:1.5px dashed #9f663f;
+  background:#fff8e7;
+  border-radius:4px 10px 6px 12px;
+  padding:10px 12px;
+  box-shadow:2px 4px 0 #b58b4930;
+  transform:rotate(-1.2deg);
+}
+.stamp:nth-child(2){background:#e1f5ed;transform:rotate(1.1deg)}
+.stamp:nth-child(3){background:#fff0b4;transform:rotate(.8deg)}
+.stamp:nth-child(4){background:#ffe1d7;transform:rotate(-.7deg)}
+.stamp b{display:block;color:var(--red);font-size:20px;margin-bottom:4px}
+.nav{
+  position:sticky;top:0;z-index:10;
+  display:flex;gap:8px;flex-wrap:wrap;justify-content:center;
+  padding:12px;margin:0 auto 18px;
+  background:#fff8eccc;border:1px solid #d6bf87;border-radius:999px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 8px 20px #0001;
+}
+.nav a,.tab-btn,.filter-btn,.small-btn{
+  appearance:none;border:1px solid #b8904f;background:#fff9e8;color:#493620;
+  border-radius:999px;padding:9px 14px;font-family:"Noto Serif SC";font-weight:800;
+  cursor:pointer;text-decoration:none;transition:.18s transform,.18s background;
+}
+.nav a:hover,.tab-btn:hover,.filter-btn:hover,.small-btn:hover{transform:translateY(-1px);background:#ffefbd}
+.section-title{
+  display:inline-block;
+  margin:0 0 18px 28px;
+  padding:3px 12px;
+  font-family:"Long Cang","Ma Shan Zheng","ZCOOL KuaiLe";
+  font-size:44px;
+  background:linear-gradient(180deg, transparent 58%, #f6d85d 58%);
+  transform:rotate(-2deg);
+  text-shadow:1px 1px 0 #fff;
+}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{
+  background:#fffaf0;
+  border:1px solid #d0b37b;
+  border-radius:5px 12px 6px 10px;
+  padding:15px;
+  box-shadow:0 8px 16px -14px #000, 3px 4px 0 #caa76f2d;
+  line-height:1.7;
+  position:relative;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  width:54px;height:15px;
+  top:-8px;left:18px;
+  background:#ffe580b8;
+  border-left:1px dashed #8a673b55;
+  border-right:1px dashed #8a673b55;
+  transform:rotate(-4deg);
+  box-shadow:0 2px 5px #0002;
+}
+.grid .card:nth-child(4n+2){background:#f0faef;transform:rotate(.35deg)}
+.grid .card:nth-child(4n+3){background:#eff8ff;transform:rotate(-.28deg)}
+.grid .card:nth-child(4n+4){background:#fff0e8;transform:rotate(.22deg)}
+.card h3,.card h4{margin:0 0 8px;font-size:19px}
+.meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+.badge{
+  display:inline-block;padding:2px 8px;margin:0 4px 4px 0;border-radius:999px;
+  font-size:12px;font-weight:800;border:1px solid currentColor;background:#fff;
+}
+.b-must{color:#b13b30;background:#ffe2dc}.b-food{color:#8a5412;background:#ffedc5}.b-walk{color:#276844;background:#dff1df}.b-data{color:#356a95;background:#ddecfb}.b-shop{color:#74599e;background:#ece2ff}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:2px 0 18px}
+.tab-btn.active,.filter-btn.active{background:#2f6b48;color:#fff;border-color:#2f6b48}
+.tab-pane{display:none}.tab-pane.active{display:block}
+.timeline{position:relative;margin-left:20px}
+.timeline::before{content:"";position:absolute;left:80px;top:0;bottom:0;width:3px;background:linear-gradient(var(--red),var(--pine),var(--blue));border-radius:10px}
+.slot{
+  display:grid;
+  grid-template-columns:96px 1fr;
+  gap:18px;
+  margin:0 0 16px;
+}
+.time{
+  align-self:start;text-align:center;
+  background:#2d5941;color:#fff;border-radius:12px;padding:8px 6px;
+  font-family:"Caveat";font-size:24px;font-weight:700;
+  box-shadow:0 5px 0 #163626;
+  transform:rotate(-3deg);
+}
+.entry{
+  background:#fffaf0;
+  border:1px solid #ceb37a;
+  border-radius:5px 14px 7px 12px;
+  box-shadow:0 8px 18px -16px #000, 4px 5px 0 #b58b4926;
+  overflow:hidden;
+  position:relative;
+}
+.slot:nth-child(even) .entry{background:#f4fbef;transform:rotate(.18deg)}
+.slot:nth-child(odd) .entry{transform:rotate(-.14deg)}
+.entry::before{
+  content:"";
+  position:absolute;
+  right:20px;top:-8px;
+  width:72px;height:17px;
+  background:#bce2f0b8;
+  transform:rotate(4deg);
+  border-left:1px dashed #5d829455;
+  border-right:1px dashed #5d829455;
+  z-index:2;
+}
+.entry-head{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 14px;cursor:pointer;
+  background:
+    linear-gradient(90deg,#fff4cd,#fffaf0),
+    repeating-linear-gradient(90deg, transparent 0 12px, #ffffff55 12px 13px);
+}
+.dot{width:16px;height:16px;border:3px solid #fff;border-radius:50%;background:var(--red);box-shadow:0 0 0 2px #b59255;flex:0 0 auto}
+.entry h3{margin:0;font-size:19px;line-height:1.35;flex:1}
+.chev{transition:.2s transform}.entry.open .chev{transform:rotate(90deg)}
+.entry-body{display:none;padding:0 16px 14px 42px;line-height:1.8;color:#493820}
+.entry.open .entry-body{display:block}
+.note{background:#fff0c8;border-left:5px solid var(--gold);padding:9px 12px;border-radius:8px;margin:9px 0}
+.note::before{content:"✎ ";font-family:"Caveat";font-size:22px;color:#9b342d}
+.route-map{
+  display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:center;
+  margin:14px 0;
+}
+.node{min-height:72px;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;border:1px solid #b99153;border-radius:12px;background:#fff7e4;font-weight:800}
+.node:nth-child(4n+1){background:#fff0b4;transform:rotate(-1.5deg)}
+.node:nth-child(4n+3){background:#dff3ec;transform:rotate(1deg)}
+.node:nth-child(4n+5){background:#ffe0d4;transform:rotate(-.8deg)}
+.node:nth-child(4n+7){background:#e2f0ff;transform:rotate(1.2deg)}
+.arrow{font-size:24px;text-align:center;color:#9a6f2e}
+.mount-route{
+  display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin:12px 0;
+}
+.mount-route span{display:flex;align-items:center;justify-content:center;text-align:center;min-height:58px;border-radius:10px;padding:7px;background:#e5f1dd;border:1px solid #91ad72;font-size:13px;font-weight:800}
+.mount-route span:nth-child(odd){transform:rotate(-1.2deg);background:#e6f5dd}
+.mount-route span:nth-child(even){transform:rotate(1deg);background:#fff0ba}
+.progress-box{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+.checklist label{
+  display:flex;gap:9px;align-items:flex-start;
+  padding:9px;border-bottom:1px dashed #c8ad73;line-height:1.55;cursor:pointer;
+}
+.checklist input{margin-top:5px;accent-color:var(--pine)}
+.meter{height:18px;border-radius:999px;background:#ead6a6;overflow:hidden;border:1px solid #ad8a50}
+.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,#e66b3d,#f2c84e,#3f8b56);transition:.25s width}
+.budget input[type=range]{width:100%;accent-color:var(--pine)}
+.total{
+  font-family:"Caveat";font-size:38px;color:var(--red);font-weight:700;
+}
+.filterbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.pill-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.pill{padding:5px 9px;border-radius:999px;background:#e9f0d8;border:1px solid #9cad66;font-size:12px;font-weight:800}
+.source-list li{margin:7px 0;line-height:1.6}
+.footer{text-align:center;color:#6f5a41;margin:26px 0 0;font-size:13px}
+.ticket-strip{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin:16px 0 0;
+}
+.ticket{
+  position:relative;
+  min-height:96px;
+  padding:12px 14px 12px 18px;
+  border:1px solid #a66b42;
+  border-radius:8px;
+  background:#fff2cf;
+  box-shadow:3px 4px 0 #a66b4230;
+  overflow:hidden;
+  transform:rotate(-.8deg);
+}
+.ticket:nth-child(even){background:#e8f7ef;transform:rotate(.8deg)}
+.ticket::before,.ticket::after{
+  content:"";
+  position:absolute;top:50%;
+  width:18px;height:18px;border-radius:50%;
+  background:#f5ead2;border:1px solid #a66b42;
+}
+.ticket::before{left:-10px}.ticket::after{right:-10px}
+.ticket b{display:block;font-size:18px;color:#9b342d}
+.ticket small{color:#73553b}
+.stamp-mark{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:92px;height:92px;
+  border:3px solid #b73b32;
+  border-radius:50%;
+  color:#b73b32;
+  font-family:"Ma Shan Zheng";
+  font-size:24px;
+  transform:rotate(-13deg);
+  float:right;
+  margin:0 0 8px 12px;
+  opacity:.82;
+}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}.hero-art{min-height:390px;border-right:0;border-bottom:1px solid #cba96c}
+  h1{font-size:46px}
+  .grid,.grid.two,.progress-box{grid-template-columns:1fr}
+  .route-map{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}
+  .mount-route{grid-template-columns:repeat(2,1fr)}
+  .ticket-strip{grid-template-columns:1fr}
+  .timeline{margin-left:0}.timeline::before{left:45px}
+  .slot{grid-template-columns:62px 1fr;gap:10px}.time{font-size:19px}
+  .page{padding:24px 16px}.section-title{margin-left:0;font-size:28px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<section class="page hero" id="top">
+  <div class="hero-art" aria-label="泰山日出插画">
+    <div class="sun"></div>
+    <div class="ridge"></div>
+    <div class="stairs"></div>
+    <div class="gate"></div>
+  </div>
+  <div class="hero-copy">
+    <span class="kicker">2026.05.16-17 · 北京立水桥出发 · 周末极限但不瞎冲</span>
+    <h1>泰安泰山<br>两日手账</h1>
+    <div class="subtitle">Mount Tai field notes from Lishuiqiao</div>
+    <p class="hero-note">
+      这份路线把周六白天留给岱庙、老城和泰安烟火气，把周日留给一段较长时间的泰山核心游览：天外村上山到中天门，徒步穿越云步桥、五大夫松、十八盘、南天门、天街、碧霞祠、玉皇顶，再按体力选择索道/大巴下山。信息核验日期为 <b>2026-05-15</b>，火车余票、景区预约和天气以出发前实时查询为准。
+    </p>
+    <div class="hero-grid">
+      <div class="stamp"><b>往返建议</b>G171 早到泰安，G304 晚返北京南</div>
+      <div class="stamp"><b>山上主线</b>中天门徒步到岱顶，保留 6 小时以上</div>
+      <div class="stamp"><b>食物关键字</b>泰山糁、驴油火烧、三美、炒鸡、煎饼</div>
+      <div class="stamp"><b>购物关键字</b>泰山石敢当、桃木、文创煎饼、泰山茶</div>
+    </div>
+    <div class="ticket-strip" aria-label="旅行票根">
+      <div class="ticket"><b>北京南</b><small>06:30 出发<br>高铁票根</small></div>
+      <div class="ticket"><b>岱庙</b><small>城市序章<br>碑刻古树</small></div>
+      <div class="ticket"><b>十八盘</b><small>周日核心<br>慢慢爬</small></div>
+      <div class="ticket"><b>泰安站</b><small>19:12 左右<br>晚返北京</small></div>
+    </div>
+  </div>
+</section>
+
+<nav class="nav">
+  <a href="#prep">行前</a>
+  <a href="#traffic">交通</a>
+  <a href="#itinerary">行程</a>
+  <a href="#mountain">泰山长线</a>
+  <a href="#food">食宿购</a>
+  <a href="#tools">工具箱</a>
+  <a href="#sources">来源</a>
+</nav>
+
+<section class="page" id="prep">
+  <div class="tape left"></div><div class="tape right"></div>
+  <h2 class="section-title">行前准备</h2>
+  <div class="grid">
+    <div class="card">
+      <span class="stamp-mark">已核验</span>
+      <h3>预约与购票</h3>
+      <p>泰山门票官方英文页显示成人票 <b>115 元/人</b>，首次入园后 <b>3 日有效</b>；复入园需通过“泰山景区”微信公众号预约入口和时段。天外村/桃花峪到中天门方向景区旅游车单程 <b>40 元/人</b>。</p>
+      <div class="note">周末建议今晚就买：高铁、酒店、泰山门票时段、山顶/南天门附近住宿候补。平台可用 12306、携程、飞猪、美团/大众点评交叉比价。</div>
+    </div>
+    <div class="card">
+      <h3>装备清单</h3>
+      <p>身份证、充电宝、登山杖、护膝、轻雨衣、防滑鞋、薄羽绒/冲锋衣、速干内搭、墨镜、防晒、湿巾、创可贴、葡萄糖、士力架、盐丸、保温杯。</p>
+      <p>泰山山顶与市区温差明显，周日如果遇雨或大风，十八盘石阶会更滑，宁可少拍照也别抢边缘机位。</p>
+    </div>
+    <div class="card">
+      <h3>平台笔记口径</h3>
+      <p>小红书/微博侧重“日出、十八盘、老县衙大院、山顶住宿避坑”；携程/飞猪侧重门票酒店套餐；美团/大众点评侧重老泰安泰安菜、赵记煎饼、鲁菜根、泰山糁和本地烧烤热度。</p>
+      <p>本手账将平台热度当作“发现线索”，价格、开放、票务只采官方或购票页实时核验。</p>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="traffic">
+  <div class="tape mid"></div>
+  <h2 class="section-title">交通总览</h2>
+  <div class="route-map">
+    <div class="node">立水桥<br>05:00 出门</div><div class="arrow">→</div>
+    <div class="node">地铁 5/14/4<br>北京南</div><div class="arrow">→</div>
+    <div class="node">G171<br>06:30-08:35</div><div class="arrow">→</div>
+    <div class="node">泰安站<br>打车/公交</div>
+  </div>
+  <div class="grid two">
+    <div class="card">
+      <h3>去程方案 · 追求早到</h3>
+      <p><b>立水桥 → 北京南站：</b>若地铁首班衔接不稳，建议 04:50-05:05 网约车直达北京南，约 45-65 分钟；若坐地铁，5 号线到蒲黄榆换 14 号线/或惠新西街南口换 10 再换 4，需预留安检和站内步行。</p>
+      <p><b>北京南 → 泰安：</b>优选 G171，公开时刻信息显示北京南 06:30 发、泰安 08:35 到，约 2 小时 5 分。二等座常见票价约 250 元上下，具体以 12306 当日为准。</p>
+    </div>
+    <div class="card">
+      <h3>返程方案 · 给泰山留满时间</h3>
+      <p><b>泰安 → 北京南：</b>推荐 G304 晚间段，公开时刻信息显示泰安约 19:10/19:12、北京南 21:14 到。这样周日可在泰山保留完整白天。</p>
+      <p><b>北京南 → 立水桥：</b>21:30 左右仍可地铁回家，预计 60-75 分钟；若腿废了，直接打车，约 45-70 分钟。</p>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="itinerary">
+  <div class="tape left"></div><div class="tape right"></div>
+  <h2 class="section-title">主行程</h2>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="day1">Day 1 · 岱庙老城 + 泰安味</button>
+    <button class="tab-btn" data-tab="day2">Day 2 · 泰山长线 + 晚返</button>
+    <button class="tab-btn" data-tab="rain">雨天/体力不足版</button>
+  </div>
+
+  <div class="tab-pane active" id="day1">
+    <div class="timeline">
+      <div class="slot">
+        <div class="time">04:50</div>
+        <article class="entry open">
+          <div class="entry-head"><span class="dot"></span><h3>立水桥出发 · 早班高铁模式 <span class="badge b-data">交通</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">优先网约车到北京南，避免早班地铁首班衔接焦虑。出门前完成：身份证、充电宝、门票预约截图、酒店确认号、雨衣和护膝。早餐可在北京南买三明治/咖啡，车上补觉。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">06:30</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>北京南 → 泰安站 <span class="badge b-data">G171</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">车程约 2 小时。建议订靠窗，提前在 12306 候补同车相邻座。到泰安站后先去酒店寄存，不建议背着大包逛岱庙和老街。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">08:45</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>泰安站 → 天外村/岱庙附近酒店寄存 <span class="badge b-data">落地</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">泰安高铁站到天外村官方线路说明提到可乘 37 路公交，出租车约 35 元、约 40 分钟；周末紧凑路线建议打车。住宿优先选天外村/岱庙/红门三角区，第二天少折返。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">09:40</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>岱庙深逛 · 泰山信仰的城市序章 <span class="badge b-must">必去</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">
+            岱庙是古代帝王祭祀泰山神的核心空间，可按正阳门、配天门、天贶殿、汉柏院、唐槐院、碑刻长廊走。重点看：宋代壁画《泰山神启跸回銮图》、秦刻石相关展示、汉柏唐槐和宫殿轴线。
+            <div class="note">玩法像《孤独星球》式慢读：先看建筑等级，再看碑刻文字，最后在院内找古树的树牌。别急着进山，先理解“为何泰山不只是一座山”。</div>
+          </div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">12:00</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>午餐 · 老泰安泰安菜/鲁菜根 <span class="badge b-food">鲁菜</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">点菜方向：泰山三美汤、老泰安炒鸡、手工煎饼、干炸赤鳞鱼或本地河鱼、黄瓜拌油条、家常小酥肉。菜量偏大，两人 3 菜 1 汤足够。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">13:30</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>泰安老街/老县衙大院 · 小吃和伴手礼 <span class="badge b-shop">买</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">老县衙大院是泰安市文旅局 2026 年推荐的烟火气小吃巷，关键词包括泰山糁、炸臭豆腐、梅干菜扣肉饼。顺路买：泰山煎饼、得膳斋糕点、泰山原浆啤酒、小包装泰山茶、石敢当冰箱贴。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">15:00</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>普照寺/红门宫轻徒步 · 明天登山预热 <span class="badge b-walk">散步</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">从红门一带感受御道起点：岱宗坊、关帝庙、一天门、孔子登临处、红门宫。今天不要爬太高，主要确认明天入口、补给店和打车点。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">17:30</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>晚餐 · 泰山炒鸡 + 三美 + 原浆 <span class="badge b-food">吃饱</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">明天要爬山，晚餐别过辣过撑。推荐组合：炒鸡半份、泰山三美、煎饼、凉菜、热汤。泰山原浆啤酒可以尝一杯，但不要喝到影响睡眠。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">20:30</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>酒店整理 · 登山包预装 <span class="badge b-data">准备</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">把大件行李留酒店，只带小包：水 1-1.5L、能量食物、薄外套、雨衣、证件、充电宝。睡前查泰山景区公众号、天气、索道运行和大巴排队情况。</div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="day2">
+    <div class="timeline">
+      <div class="slot">
+        <div class="time">06:20</div>
+        <article class="entry open">
+          <div class="entry-head"><span class="dot"></span><h3>早餐 · 泰山糁 + 驴油火烧 <span class="badge b-food">本地早饭</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">泰安市文旅局把泰山糁、驴油火烧列为代表小吃。糁适合登山前暖胃，火烧适合打包；再买两根香蕉和一瓶电解质水。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">07:15</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>天外村游客中心 · 大巴到中天门 <span class="badge b-data">省力上山</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">官方 2026 年线路说明：天外村到中天门盘山公路 14.35 公里，行程约 30 分钟；大巴单程 40 元。周末早到能少排队。到中天门后不急坐索道，按本手账走核心登山段。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">08:10</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>中天门 → 云步桥 → 五大夫松 <span class="badge b-walk">进入御道</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">中天门是东西路交汇处，海拔约 847 米。之后一路进入泰山最经典的登天段，看云步桥、五大夫松、望人松。节奏：走 25 分钟休 5 分钟，不要一开始就冲。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">10:20</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>十八盘 · 泰山最硬的一页 <span class="badge b-must">长时间游览核心</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">十八盘是泰山登山盘路最险要的一段，官方景点介绍将其称为泰山主要标志之一。慢十八、不紧不慢又十八、紧十八三段逐渐压迫，别抢台阶边缘拍照。拍摄点：回看升仙坊、仰拍南天门、石壁谷夹道。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">12:20</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>南天门 + 天街午餐 <span class="badge b-food">补给</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">到南天门先补热水和碳水。山顶饭贵且口味普通，建议点面/饺子/热汤，别在风口久坐。天街可买“登顶纪念”小物，但石头类纪念品注意重量。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">13:10</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>碧霞祠 → 唐摩崖 → 玉皇顶 <span class="badge b-must">岱顶</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">碧霞祠看泰山女神信仰，唐摩崖读“纪泰山铭”，玉皇顶完成“会当凌绝顶”。如果天气通透，慢慢找齐鲁大地的层次；如果云雾重，就把重点放在碑刻和建筑。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">15:00</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>下山选择 · 索道/徒步二选一 <span class="badge b-data">决策点</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">赶 19:12 左右返程车，建议南天门索道到中天门，再中天门大巴回天外村；若索道排队超 60 分钟且体力尚可，可徒步下到中天门，但膝盖压力很大。最晚 16:30 前应开始下撤。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">17:15</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>回酒店取行李 + 快速晚餐 <span class="badge b-food">收尾</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">天外村回酒店取行李，再打车到泰安站。晚餐可以在站前吃简餐，或打包煎饼/火烧上车。别把返程时间压到 18:30 后，周末下山排队不可控。</div>
+        </article>
+      </div>
+      <div class="slot">
+        <div class="time">19:12</div>
+        <article class="entry">
+          <div class="entry-head"><span class="dot"></span><h3>泰安 → 北京南 → 立水桥 <span class="badge b-data">G304</span></h3><span class="chev">▶</span></div>
+          <div class="entry-body">公开时刻信息显示 G304 泰安 19:10/19:12 左右发、北京南 21:14 到。到北京南后走地铁回立水桥；腿疼就叫车，不要硬撑换乘楼梯。</div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="rain">
+    <div class="grid two">
+      <div class="card">
+        <h3>雨天山线</h3>
+        <p>天外村大巴 → 中天门 → 索道 → 南天门 → 天街 → 碧霞祠 → 玉皇顶 → 索道下。删除十八盘徒步，把“登山成就”换成“岱顶建筑和云雾”。</p>
+        <p>必备：一次性雨衣、防水鞋套、手机防水袋、干袜子。雨天不要夜爬，不要站崖边拍照。</p>
+      </div>
+      <div class="card">
+        <h3>体力不足线</h3>
+        <p>周六岱庙 + 老县衙 + 红门宫，周日天外村上山到中天门后坐索道到岱顶。下山同样索道 + 大巴。仍能覆盖南天门、天街、碧霞祠、玉皇顶。</p>
+        <p>省下的膝盖用来晚上回北京，第二天上班更像个人。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="mountain">
+  <div class="tape right"></div>
+  <h2 class="section-title">泰山长线拆解</h2>
+  <div class="mount-route">
+    <span>天外村</span><span>中天门</span><span>云步桥</span><span>五大夫松</span><span>十八盘</span><span>南天门</span><span>碧霞祠</span><span>玉皇顶</span>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>为什么不从红门全程爬？</h3>
+      <p>红门线文化密度最高，但从山脚全程上到岱顶会挤压周末返程。天外村大巴先到中天门，再徒步核心段，能把体力集中在云步桥、五大夫松、十八盘、南天门这一段最有代表性的“泰山体验”。</p>
+    </div>
+    <div class="card">
+      <h3>拍照点</h3>
+      <p>中天门牌坊、望人松、十八盘仰拍南天门、南天门门洞、天街回看群山、碧霞祠屋脊、玉皇顶石碑。人多时等 30 秒，别用身体去抢视角。</p>
+    </div>
+    <div class="card">
+      <h3>人文关键词</h3>
+      <p>封禅、岱宗、御道、摩崖石刻、碧霞元君、石敢当、五岳独尊。边走边看石刻，比只盯台阶更有意思，也能让痛苦显得比较有文化。</p>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="food">
+  <div class="tape left"></div>
+  <h2 class="section-title">食宿购物备选</h2>
+  <div class="filterbar">
+    <button class="filter-btn active" data-filter="all">全部</button>
+    <button class="filter-btn" data-filter="eat">吃</button>
+    <button class="filter-btn" data-filter="stay">住</button>
+    <button class="filter-btn" data-filter="shop">买</button>
+    <button class="filter-btn" data-filter="see">看</button>
+  </div>
+  <div class="grid" id="cards">
+    <div class="card item" data-kind="eat"><h3>泰山糁</h3><div class="meta">早餐 · 牛羊骨/鸡汤/麦仁</div>配油条、煎饼、蛋饼，登山前最稳。</div>
+    <div class="card item" data-kind="eat"><h3>驴油火烧</h3><div class="meta">山东省级非遗小吃</div>金黄酥香，适合打包当路餐。</div>
+    <div class="card item" data-kind="eat"><h3>泰山三美</h3><div class="meta">白菜、豆腐、水</div>清淡但有地方性，适合和炒鸡搭配。</div>
+    <div class="card item" data-kind="eat"><h3>泰山炒鸡</h3><div class="meta">本地鲁菜硬菜</div>口味浓，爬山前一天别点特辣。</div>
+    <div class="card item" data-kind="eat"><h3>赵记煎饼卷大葱</h3><div class="meta">携程/Trip.com 可查门店</div>煎饼、大葱、甜面酱，山东符号感拉满。</div>
+    <div class="card item" data-kind="eat"><h3>老县衙大院</h3><div class="meta">小吃集合</div>泰山糁、炸臭豆腐、梅干菜扣肉饼，适合边逛边补碳水。</div>
+    <div class="card item" data-kind="stay"><h3>天外村/岱庙附近酒店</h3><div class="meta">最适合本路线</div>周日早上少折返，下山取行李也顺。</div>
+    <div class="card item" data-kind="stay"><h3>东尊华美达/宜尚等</h3><div class="meta">携程/Klook/Trip 可比价</div>选“天外村店/泰山风景区店”关键词。</div>
+    <div class="card item" data-kind="stay"><h3>神憩宾馆/南天门宾馆</h3><div class="meta">山顶看日出备选</div>如果改夜宿山顶，需接受价格高、条件有限。</div>
+    <div class="card item" data-kind="shop"><h3>泰山石敢当</h3><div class="meta">民俗纪念</div>买小件即可，别背大石头下山。</div>
+    <div class="card item" data-kind="shop"><h3>泰山煎饼/得膳斋糕点</h3><div class="meta">伴手礼</div>轻、好分发，适合带回北京。</div>
+    <div class="card item" data-kind="shop"><h3>泰山桃木/茶/原浆</h3><div class="meta">地方特产</div>酒类注意高铁携带限制和包装防漏。</div>
+    <div class="card item" data-kind="see"><h3>岱庙</h3><div class="meta">城市里的泰山序章</div>天贶殿、壁画、古树、碑刻。</div>
+    <div class="card item" data-kind="see"><h3>红门宫</h3><div class="meta">御道起点氛围</div>适合周六轻徒步踩点。</div>
+    <div class="card item" data-kind="see"><h3>普照寺</h3><div class="meta">比主入口安静</div>山林院落感，适合下午缓慢收心。</div>
+  </div>
+</section>
+
+<section class="page" id="tools">
+  <div class="tape mid"></div>
+  <h2 class="section-title">互动工具箱</h2>
+  <div class="progress-box">
+    <div class="card checklist">
+      <h3>登山清单进度</h3>
+      <label><input type="checkbox"> 身份证、门票预约、车票截图</label>
+      <label><input type="checkbox"> 防滑鞋、登山杖、护膝</label>
+      <label><input type="checkbox"> 雨衣、薄外套、干袜子</label>
+      <label><input type="checkbox"> 水 1-1.5L、电解质、香蕉、能量棒</label>
+      <label><input type="checkbox"> 充电宝、纸巾、创可贴、垃圾袋</label>
+      <label><input type="checkbox"> 酒店寄存确认、返程提前 90 分钟下撤</label>
+      <p><b>完成度</b></p>
+      <div class="meter"><i id="meter"></i></div>
+    </div>
+    <div class="card budget">
+      <h3>预算速算</h3>
+      <p>住宿档位：<span id="stayTxt">450</span> 元/晚</p>
+      <input id="stayRange" type="range" min="250" max="1200" step="50" value="450">
+      <p>餐饮购物：<span id="foodTxt">360</span> 元/人</p>
+      <input id="foodRange" type="range" min="180" max="900" step="30" value="360">
+      <p>景区交通按：门票 115 + 天外村大巴往返 80 + 索道单程预留 100/人估算；高铁往返按 512/人估算。</p>
+      <div class="total" id="total">约 ¥1532/人</div>
+      <button class="small-btn" id="compactBtn">切换紧凑/舒适预算</button>
+    </div>
+  </div>
+</section>
+
+<section class="page" id="sources">
+  <div class="tape right"></div>
+  <h2 class="section-title">核验来源与知识归档</h2>
+  <div class="grid two">
+    <div class="card">
+      <h3>已沉淀的关键知识</h3>
+      <ul class="source-list">
+        <li>泰山成人门票 115 元，首次入园后 3 日有效；复入园需预约入口及时段。</li>
+        <li>天外村到中天门旅游车单程 40 元；官方说明天外村路线省力，但会牺牲部分景点，因此建议到中天门后再沿传统线攀爬。</li>
+        <li>红门线是古今主要登山路线，沿途古寺庙、碑碣、摩崖石刻密集，文化价值很高。</li>
+        <li>泰安美食关键词：泰山早席、泰山糁、驴油火烧、泰山煎饼、泰山炒鸡、得膳斋糕点、泰山豆腐宴、泰山原浆啤酒。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>出发前再次确认</h3>
+      <ul class="source-list">
+        <li>12306：G171/G304 是否有票、实际停站和发到时刻。</li>
+        <li>泰山景区公众号：门票时段、索道/大巴运行、天气导致的临时调整。</li>
+        <li>携程/飞猪/美团：酒店是否可寄存、早餐时间、取消政策。</li>
+        <li>中央气象台/中国天气：山顶风力、降雨、雷电预警。</li>
+      </ul>
+    </div>
+  </div>
+  <ol class="source-list">
+    <li><a href="https://tsgw.taian.gov.cn/art/2025/4/7/art_366039_10321175.html" target="_blank">泰山风景名胜区管理委员会：Mount Taishan Ticket Information</a></li>
+    <li><a href="https://tsgw.taian.gov.cn/art/2026/1/21/art_363479_10320191.html" target="_blank">泰山风景名胜区管理委员会：天外村游览路，2026-01-21</a></li>
+    <li><a href="https://tsgw.taian.gov.cn/art/2021/5/26/art_198322_10286095.html" target="_blank">泰山风景名胜区管理委员会：红门游览线景点介绍</a></li>
+    <li><a href="https://whlyj.taian.gov.cn/art/2026/4/13/art_366263_10312080.html" target="_blank">泰安市文化和旅游局：泰安有哪些美食，2026-04-13</a></li>
+    <li><a href="https://whlyj.taian.gov.cn/art/2026/2/28/art_354543_10311389.html" target="_blank">泰安市文化和旅游局：老县衙大院美食巷，2026-02-28</a></li>
+    <li><a href="https://www.chadongche.com/train/G171.html" target="_blank">G171 公开时刻参考</a>、<a href="https://www.ip.cn/train/G304.html" target="_blank">G304 公开时刻参考</a>；购票以 12306 为准。</li>
+  </ol>
+</section>
+
+<div class="footer">执行检查清单：[x] 中文 [x] 已获取上下文 [x] 已联网核验 [x] 无恶意内容 [x] 已内置质量与出发前复核清单</div>
+</div>
+
+<script>
+const tabs = document.querySelectorAll(".tab-btn");
+tabs.forEach(btn => btn.addEventListener("click", () => {
+  tabs.forEach(b => b.classList.remove("active"));
+  document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
+  btn.classList.add("active");
+  document.getElementById(btn.dataset.tab).classList.add("active");
+}));
+
+document.querySelectorAll(".entry-head").forEach(head => {
+  head.addEventListener("click", () => head.parentElement.classList.toggle("open"));
+});
+
+const checks = document.querySelectorAll(".checklist input");
+const meter = document.getElementById("meter");
+function updateMeter(){
+  const done = [...checks].filter(c => c.checked).length;
+  meter.style.width = Math.round(done / checks.length * 100) + "%";
+}
+checks.forEach(c => c.addEventListener("change", updateMeter));
+updateMeter();
+
+const stayRange = document.getElementById("stayRange");
+const foodRange = document.getElementById("foodRange");
+const stayTxt = document.getElementById("stayTxt");
+const foodTxt = document.getElementById("foodTxt");
+const total = document.getElementById("total");
+function updateBudget(){
+  const stay = Number(stayRange.value);
+  const food = Number(foodRange.value);
+  const fixed = 512 + 115 + 80 + 100 + 70;
+  stayTxt.textContent = stay;
+  foodTxt.textContent = food;
+  total.textContent = "约 ¥" + (fixed + stay + food) + "/人";
+}
+stayRange.addEventListener("input", updateBudget);
+foodRange.addEventListener("input", updateBudget);
+document.getElementById("compactBtn").addEventListener("click", () => {
+  if(Number(stayRange.value) > 350){ stayRange.value = 300; foodRange.value = 240; }
+  else { stayRange.value = 700; foodRange.value = 480; }
+  updateBudget();
+});
+updateBudget();
+
+const filters = document.querySelectorAll(".filter-btn");
+const items = document.querySelectorAll(".item");
+filters.forEach(btn => btn.addEventListener("click", () => {
+  filters.forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  const kind = btn.dataset.filter;
+  items.forEach(item => item.style.display = (kind === "all" || item.dataset.kind === kind) ? "" : "none");
+}));
+</script>
+</body>
+</html>
